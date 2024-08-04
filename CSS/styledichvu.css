@@ -1,0 +1,387 @@
+/* ************Common***************** */
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: #171100;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.6rem;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #ecebe8; */
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255),
+    rgba(50, 100, 100, 0.862)
+  );
+  padding: 20px;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+html {
+  font-size: 62.5%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  font-size: 1.6rem;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+/* ******************Header*************** */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 70px;
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255),
+    rgba(50, 100, 100, 0.862)
+  );
+}
+.logo {
+  flex: 0.25;
+}
+.menu {
+  flex: 3.5;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  padding: 10px 12px;
+  position: relative;
+}
+
+.menu li a {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.menu li:hover {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+  transition: all 0.5s;
+  background-color: rgb(184, 184, 90);
+  border-radius: 15px;
+}
+
+.others {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.others .login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+.others .cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.others > li {
+  padding: 0 12px;
+}
+
+.others > li:first-child {
+  position: relative;
+}
+
+.others > li:first-child input {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #333;
+}
+
+.others > li:first-child i {
+  position: absolute;
+  right: 15px;
+  top: 3px;
+}
+/* **********************main*********************** */
+.main-content .infor {
+  line-height: 50px;
+}
+.main-content .note {
+  background-color: red;
+  color: yellow;
+  font-size: 2rem;
+}
+.main-content .feedback .Printf {
+  margin: 20px 10px;
+  display: flex;
+}
+.main-content .instruct {
+  margin: 20px 10px;
+}
+/* ************************** */
+.icon-fix {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon-fix i {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: #dfef8c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+  border-radius: 50%;
+  animation: phone-bounce 2s infinite ease-in-out;
+}
+
+@keyframes phone-bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* ****************************footer *******************/
+footer {
+  background: rgb(85, 86, 70);
+  padding: 96px 135px 0;
+  margin-top: 50px;
+}
+.socials {
+  display: block;
+}
+.footer .row {
+  padding-bottom: 38px;
+  border-bottom: 1px solid rgb(118, 118, 25);
+  display: flex;
+}
+
+.footer .row .column {
+  width: 21.6%;
+}
+
+.footer .row .column:first-child {
+  width: 35%;
+}
+
+.footer .socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.footer .title {
+  padding-bottom: 14px;
+  padding-right: 48px;
+  display: inline-block;
+  border-bottom: 1px solid #59554b;
+  color: #231d1d;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.footer .list {
+  margin-top: 28px;
+}
+
+.footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #23211d;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer .list li:last-child a {
+  margin-bottom: 0;
+}
+
+.footer .list strong {
+  color: #231d1d;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+
+.footer .copyright {
+  padding: 28px 0;
+  color: #f3f0e8;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+/* ******************** */
+@media (max-width: 820px) {
+  .footer {
+    padding: 0;
+  }
+  .btn {
+    display: inline-block;
+    min-width: 90px;
+    padding: 0;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 999px;
+    background: #171100;
+  }
+  .slide-show {
+    width: 100%;
+    height: 400px;
+  }
+  .list-image {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 750px;
+  }
+  .header {
+    position: relative;
+    display: block;
+    height: 150px;
+  }
+  .logo {
+    position: absolute;
+    left: 25px;
+    flex: 0.25;
+  }
+  .others {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular .course-list {
+    display: block;
+  }
+  .popular .course-item {
+    margin: 50px 0;
+  }
+  .footer .row {
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgb(118, 118, 25);
+    display: flex;
+  }
+  .footer .main-content {
+    width: 100%;
+    max-width: 480px;
+  }
+  .footer .main-content .row {
+    display: block;
+  }
+  footer {
+    padding: 0 20px;
+  }
+  .footer .row .column {
+    width: 100%;
+  }
+
+  .footer .row .column:first-child {
+    width: 35%;
+  }
+
+  .header {
+    position: relative;
+    display: block;
+    height: 400px;
+  }
+  .logo {
+    position: absolute;
+    left: 25px;
+    flex: 0.25;
+  }
+  .menu ul {
+    display: block;
+    list-style: none;
+  }
+  .popular-top {
+    display: block;
+    width: 380px;
+  }
+  .popular-top .info {
+    width: 100%;
+  }
+  .popular-top .desc {
+    width: 100%;
+    color: #5f5b53;
+  }
+  .slide-show {
+    width: 450px;
+    height: 250px;
+  }
+  .list-image {
+    width: 450px;
+    height: 100%;
+  }
+  .container {
+    width: 450px;
+  }
+}
